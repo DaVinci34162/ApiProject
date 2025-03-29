@@ -12,5 +12,4 @@ Due to Docker/WSL configuration issues on my HP machine, I'm submitting the loca
 ## Docker Issues Encountered
 - HP BIOS virtualization locked
 - WSL2 installation failed (HCS_E_HYPERV_NOT_INSTALLED)
-##Link
 https://drive.google.com/file/d/1flOMwvxxTqWu2ALKnCgD0ar_jZugrh3y/view?usp=drive_link
