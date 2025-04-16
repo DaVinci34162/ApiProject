@@ -1,15 +1,8 @@
-## Workaround Submission
-Due to Docker/WSL configuration issues on my HP machine, I'm submitting the locally tested version. The app:
-- Uses OpenWeatherMap API
-- Runs on Node.js v18
-- Implements error handling
+# Weather App 🌦️
 
-## How to Run
-1. `npm install`
-2. `node server.js`
-3. Access `http://localhost:5000/weather?city=London`
+This Weather App is a simple web application that allows users to search for real-time weather conditions and a short-term hourly forecast for any city around the world using the OpenWeatherMap API.
 
-## Docker Issues Encountered
-- HP BIOS virtualization locked
-- WSL2 installation failed (HCS_E_HYPERV_NOT_INSTALLED)
-https://drive.google.com/file/d/1flOMwvxxTqWu2ALKnCgD0ar_jZugrh3y/view?usp=drive_link
+---
+
+## 📁 Project Structure
+WeatherApp/ ├── public/ │ ├── index.html # HTML layout │ ├── style.css # App styling │ └── script.js # Frontend JavaScript to handle API calls ├── .gitignore # Ignoring sensitive and unnecessary files ├── .env # API key (NOT uploaded to GitHub) ├── package.json # Dependencies and scripts ├── package-lock.json # Lock file for exact package versions ├── server.js # Node.js + Express backend server └── README.md #
