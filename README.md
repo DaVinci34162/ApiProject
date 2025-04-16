@@ -11,7 +11,23 @@ This Weather App is a simple web application that allows users to search for rea
 - Real-time data from OpenWeatherMap API
 - Load-balanced deployment on multiple servers
 
----
+          +---------------------------+
+         |      User's Browser       |
+         +------------+--------------+
+                      |
+                      v
+         +---------------------------+
+         |      Nginx Load Balancer  |  ← (3.85.160.81)
+         +------------+--------------+
+                      |
+          +-----------+-----------+
+          |                       |
+          v                       v
++----------------+      +----------------+
+|  Web Server 01 |      |  Web Server 02 |
+| (3.83.140.35)  |      | (18.234.165.101)|
++----------------+      +----------------+
+
 
 # 🛠️ Technologies Used
 
