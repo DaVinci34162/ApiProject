@@ -1,165 +1,96 @@
-html {
-    height: 100%;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 body {
-    background: rgb(0, 0, 0);
-    padding: 1rem 5rem;
-    text-transform: capitalize;
-    font-family: 'Times New Roman', Times, serif;
-    background: url('./background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header #error {
-    display: none;
-    color: red;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.header h1 {
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-#input {
-    font-size: 18px;
-    padding: 10px 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background: aliceblue;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-#search {
-    background: none;
-    padding: 10px 20px;
-    color: aliceblue;
-    outline: none;
-    background: cadetblue;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-.weather {
-    text-align: center;
-    color: aliceblue;
-}
-
-#city {
-    font-size: 30px;
-}
-
-.weather img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50px;
-    background: rgba(240, 248, 255, 0.408);
-}
-
-#temperature {
-    font-size: 50px;
-    margin: 0;
-    margin-left: 30px;
-    margin-bottom: 10px;
-}
-
-.temp-box {
+    background: #8C52FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0;
+    height: 100vh;
+    margin: 0;
 }
 
-#clouds {
-    font-size: 20px;
-    background: rgba(153, 205, 50, 0.778);
-    padding: 2px 20px;
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    padding: 20px;
     border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
 }
 
-main {
-    display: grid;
-    grid-column-gap: 25px;
-    grid-template-columns: 1fr 5px 1fr;
+h2, label, p {
+    color: #fff;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button {
+    background: #debff4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 50px;
+    margin-right: 10px;
     color: white;
 }
 
-.next {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-}
-
-.next p,
-.next h3 {
-    margin: 3px 0;
-}
-
-.forecstD {
-    margin: 20px 50px;
-    color: aliceblue;
-}
-
-.weekF {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.cast-header {
-    color: aliceblue;
-    background: rgba(254, 189, 132, 0.539);
-    width: max-content;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 18px;
+.hourly-item img {
+    width: 30px;
+    height: 30px;
     margin-bottom: 5px;
 }
 
-.divider1,
-.divider2 {
-    background: rgba(254, 189, 132, 0.539);
-    height: 200px;
-    border-radius: 5px;
-}
-
-.divider2 {
-    height: 5px;
-    width: 30%;
-    margin: 0 auto;
-}
-
-.time,
-.date {
-    color: rgb(254, 189, 132);
-}
-
-.desc {
-    color: rgb(196, 255, 77);
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
 }
